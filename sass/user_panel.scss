@@ -1,0 +1,31 @@
+.user-panel__menu {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  list-style: none;
+  display: flex;
+}
+
+.user-panel__menu-item {
+  margin-right: 50px;
+}
+
+.user-panel__menu-link {
+  color: $white;
+  border-bottom: 2px solid $white;
+}
+
+.user-panel__info {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.user-panel__info-item {
+  margin-bottom: 7px;
+}
+
+.user-panel__info-item span {
+  font-weight: normal;
+  color: #ffa800;
+}

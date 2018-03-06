@@ -1,0 +1,133 @@
+.apps {
+
+}
+
+.apps__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-top: 32px;
+  padding-left: 50px;
+  padding-bottom: 25px;
+  list-style: none;
+  background: #f6f6f6;
+}
+
+.apps__list:nth-child(2) {
+  margin-bottom: 15px;
+  padding-top: 35px;
+  background: $white;
+}
+
+.apps__list:last-child {
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.apps__list-item {
+  margin-right: 40px;
+}
+
+.apps__list-wrap {
+  position: relative;
+  width: 180px;
+  padding-left: 91px;
+  margin-bottom: 34px;
+
+  &--news {
+    margin-bottom: 31px;
+  }
+
+  &--assistant {
+    margin-bottom: 31px;
+  }
+
+  &--neboskreb {
+    width: 150px;
+    padding-left: 95px;
+    margin-left: 70px;
+    margin-bottom: 17px;
+  }
+}
+
+.apps__list-wrap::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -2px;
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+
+.apps__list-wrap--store::before {
+  background: url("../img/icon-nl-store.png") no-repeat;
+}
+.apps__list-wrap--reader::before {
+  background: url("../img/icon-nl-reader.png") no-repeat;
+}
+
+.apps__list-wrap--news::before {
+  top: 6px;
+  background: url("../img/icon-nl-news.png") no-repeat;
+}
+
+.apps__list-wrap--assistant::before {
+  top: 6px;
+  left: -4px;
+  background: url("../img/icon-nl-assistant.png") no-repeat;
+}
+
+.apps__list-wrap--neboskreb::before {
+  top: 5px;
+  background: url("../img/icon-nl-neboskreb.png") no-repeat;
+}
+
+
+.apps__title {
+  margin: 0;
+  margin-bottom: 3px;
+  font-size: 30px;
+}
+
+.apps__list:nth-child(2) .apps__title {
+  font-size: 25px;
+}
+
+.apps__subtitle {
+  margin: 0;
+}
+
+.apps__button {
+  display: block;
+  width: 182px;
+  height: 48px;
+  margin-right: 8px;
+  margin-bottom: 15px;
+  font-size: 0;
+  border-radius: 2px;
+
+  &--store {
+    background: $black url("../img/btn-app-store.png") no-repeat 50%;
+  }
+
+  &--goolge {
+    background: $black url("../img/btn-google-play.png") no-repeat 50%;
+  }
+}
+
+.apps__list:last-child .apps__button {
+  display: inline-block;
+}
+
+.apps__subscribe {
+  display: block;
+  width: 145px;
+  padding: 9px 0;
+  text-align: center;
+  color: $white;
+  background: #34ace0;
+  border-radius: 2px;
+}
+
