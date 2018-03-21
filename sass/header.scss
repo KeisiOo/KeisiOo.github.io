@@ -4,25 +4,25 @@
 }
 
 .page-header__top {
-  height: 214px;
+  min-height: 214px;
   display: flex;
 }
 
 .page-header__logo-wrap {
-  width: 240px;
-  height: 214px;
+  width: 37%;
+  min-height: 214px;
   background: #4cb62c url("../img/header-logo.png") no-repeat 50%;
 }
 
 .page-header__user-panel {
-  width: 360px;
+  width: 63%;
   padding-top: 31px;
   padding-left: 50px;
-  background: url("../img/header-top-bg.jpg") no-repeat;
+  background: url("../img/header-top-bg.jpg");
 }
 
 .page-header__bottom {
-  height: 405px;
+  min-height: 465px;
   padding-top: 60px;
   padding-left: 50px;
   background: url("../img/header-bg.jpg") no-repeat;
@@ -53,4 +53,32 @@
   text-align: center;
   color: $white;
   background: #ffa800;
+}
+
+@media (max-width: 425px) {
+  .page-header__top {
+    display: block;
+  }
+
+  .page-header__logo-wrap {
+    width: 100%;
+    min-height: 90px;
+  }
+
+  .page-header__user-panel {
+    height: 216px;
+    padding-left: 25px;
+    width: 100%;
+  }
+
+  .page-header__bottom {
+    min-height: 425px;
+    padding: 0 25px;
+    padding-top: 30px;
+    background-position: 65%;
+  }
+
+  .page-header__subtitle {
+    width: 300px;
+  }
 }

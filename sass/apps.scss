@@ -1,5 +1,8 @@
 .apps {
-
+  margin-bottom: 38px;
+  padding-top: 32px;
+  padding-left: 50px;
+  background: #f6f6f6;
 }
 
 .apps__list {
@@ -7,33 +10,32 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  padding-top: 32px;
-  padding-left: 50px;
-  padding-bottom: 25px;
+  margin-bottom: 70px;
   list-style: none;
-  background: #f6f6f6;
 }
 
 .apps__list:nth-child(2) {
-  margin-bottom: 15px;
-  padding-top: 35px;
+  margin-bottom: 65px;
   background: $white;
 }
 
 .apps__list:last-child {
   justify-content: center;
-  padding-top: 25px;
+  margin-bottom: 0;
 }
 
 .apps__list-item {
-  margin-right: 40px;
+  width: 48%;
+
+  &--neboskreb {
+    width: auto;
+  }
 }
 
 .apps__list-wrap {
   position: relative;
-  width: 180px;
   padding-left: 91px;
-  margin-bottom: 34px;
+  margin-bottom: 20px;
 
   &--news {
     margin-bottom: 31px;
@@ -44,10 +46,9 @@
   }
 
   &--neboskreb {
-    width: 150px;
+    width: 250px;
     padding-left: 95px;
-    margin-left: 70px;
-    margin-bottom: 17px;
+    margin-left: 50px;
   }
 }
 
@@ -100,11 +101,10 @@
 }
 
 .apps__button {
-  display: block;
+  display: inline-block;
   width: 182px;
   height: 48px;
   margin-right: 8px;
-  margin-bottom: 15px;
   font-size: 0;
   border-radius: 2px;
 
@@ -117,10 +117,6 @@
   }
 }
 
-.apps__list:last-child .apps__button {
-  display: inline-block;
-}
-
 .apps__subscribe {
   display: block;
   width: 145px;
@@ -131,3 +127,59 @@
   border-radius: 2px;
 }
 
+@media (max-width: 425px) {
+  .apps {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .apps__list {
+    display: block;
+  }
+
+  .apps__list:nth-child(2) {
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+
+  .apps__list:last-child {
+    padding-top: 0;
+  }
+
+  .apps__list-item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .apps__list-wrap {
+    margin-bottom: 20px;
+
+    &--news {
+      margin-bottom: 30px;
+    }
+
+    &--assistant {
+      margin-bottom: 30px;
+    }
+
+    &--neboskreb {
+      width: auto;
+    }
+  }
+
+  .apps__title {
+    font-size: 24px;
+  }
+
+  .apps__subtitle {
+    font-size: 16px;
+  }
+
+  .apps__list-wrap::before {
+    top: 5px;
+  }
+
+  .apps__subscribe {
+    width: 100%;
+  }
+
+}

@@ -5,7 +5,7 @@
 }
 
 .manual__wrap {
-  width: 445px;
+  width: 75%;
 }
 
 .manual__title {
@@ -57,4 +57,31 @@
 .manual__desc {
   margin: 0;
   line-height: 28px;
+}
+
+@media (max-width: 425px) {
+  .manual {
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+
+  .manual__wrap {
+    width: 100%;
+  }
+
+  .manual__title {
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  .manual__list {
+    margin-bottom: 16px;
+  }
+
+  .manual__desc {
+    line-height: normal;
+  }
 }

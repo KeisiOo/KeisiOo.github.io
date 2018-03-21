@@ -1,9 +1,9 @@
 .user-panel__menu {
+  display: flex;
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
   list-style: none;
-  display: flex;
 }
 
 .user-panel__menu-item {
@@ -28,4 +28,10 @@
 .user-panel__info-item span {
   font-weight: normal;
   color: #ffa800;
+}
+
+@media (max-width: 425px) {
+  .user-panel__menu {
+    justify-content: center;
+  }
 }

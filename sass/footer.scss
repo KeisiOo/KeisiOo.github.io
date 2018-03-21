@@ -5,7 +5,7 @@
 }
 
 .page-footer__title {
-  width: 370px;
+  width: 57%;
   margin: 0 auto;
   margin-bottom: 20px;
   font-size: 30px;
@@ -21,7 +21,7 @@
 .social__link {
   display: flex;
   align-items: center;
-  margin: 0 20px;
+  margin: 0 24px;
   font-size: 20px;
   text-decoration: underline;
   color: $black;
@@ -48,7 +48,7 @@
 }
 
 .page-footer-desc {
-  width: 530px;
+  width: 82%;
   margin: 0 auto;
   font-size: 20px;
 }
@@ -61,4 +61,20 @@
 
 .page-footer-desc span {
   font-weight: bold;
+}
+
+@media (max-width: 425px) {
+  .page-footer__title {
+    font-size: 24px;
+  }
+
+  .social__link {
+    font-size: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .page-footer-desc {
+    font-size: 18px;
+  }
 }
